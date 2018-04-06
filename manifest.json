@@ -1,0 +1,18 @@
+{
+    "manifest_version":2,
+    "name":"myimageextension",
+    "version":"0.1",
+    "description":"change all the image of given url into my image",
+    "web_accessible_resources": [
+        "image/*.jpg"
+    ],
+    "content_scripts":[{
+        "matches":[
+            "<all_urls>"
+        ],
+        "js":["content.js"]
+    }
+        
+    ]
+
+}
